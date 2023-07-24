@@ -3,6 +3,34 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
+define chris = Character("Chris")
+define chef = Character("Chef")
+define ez = Character("Ezekiel")
+define noah = Character("Noah")
+define justin = Character("Justin")
+define katie = Character("Katie")
+define tyler = Character("Tyler")
+define cody = Character("Cody")
+define beth = Character("Beth")
+define sadie = Character("Sadie")
+define court = Character("Courtney")
+define harold = Character("Harold")
+define eva = Character("Eva")
+define trent = Character("Trent")
+define bridge = Character("Bridgette")
+define linds = Character("Lindsay")
+define dj = Character("DJ")
+define izzy = Character("Izzy")
+define geoff = Character("Geoff")
+define leshawna = Character("Leshawna")
+define duncan = Character("Duncan")
+define heather = Character("Heather")
+define gwen = Character("Gwen")
+define owen = Character("Owen")
+
+    # We still need to create our own character user, but for that we need to add our name as well.
+
 define e = Character("Eileen")
 
 
