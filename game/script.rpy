@@ -32,6 +32,8 @@ define heather = Character("Heather")
 define gwen = Character("Gwen")
 define owen = Character("Owen")
 
+define us = Character("[name]")
+
     # We still need to create our own character user, but for that we need to add our name as well.
 
 
@@ -103,10 +105,11 @@ label start:
     "Right?"
 
     
-    name = renpy.input("What's the name of the movie star?")
-    name = name.strip() or "Camper"
+    python:
+        name = renpy.input("What's the name of the movie star?")
+        name = name.strip() or "Camper"
+        
 
-    define us = Character([name])
 
     us "test if new character works"
 

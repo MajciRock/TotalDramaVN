@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 113, in script
+    u "test if new character works"
+Exception: Sayer 'u' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 113, in script
+    u "test if new character works"
+  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'u' is not defined.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+Total Drama Visual Novel 1.0
+Wed Jul 26 20:24:53 2023
