@@ -110,8 +110,20 @@ label start:
         name = name.strip() or "Camper"
         
 
+    scene dock
+    show chris happy
 
-    us "test if new character works"
+    chris "Before we continue, I want to introduce you all to a very special guest, you know them, you love them, this is probably the only chance you have in actually meeting them face to face!"
+    chris "Famous teen star [name]!"
+
+    us "Hello, Canada!"
+
+    "You yell out while waving towards the camera."
+    "You can notice a fat guy pushing all the people nearby to get to you."
+    "He shakes your hand with pure excitement, radiating so much joy."
+
+
+    
 
 
 
