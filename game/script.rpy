@@ -44,14 +44,14 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-            #scene bg room
+            
     scene dock
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-            #show eileen happy
+            
     show chris
     # These display lines of dialogue.
 
@@ -86,17 +86,32 @@ label start:
     show chris happy
     
     chris "Who will crumble under the pressure?"
-    chris "Find out here, right now, on Total. Drama. Island! "
-
-    chris "MajciRock says hi to Shady_Elf and dislikes Python for tab spaces due to errors"
-
-    #end of introduction, the character gets introduced
-
-        
+    chris "Find out here, right now, on Total. Drama. Island!"
 
 
 
-        
+        #end of introduction, the character gets introduced
+
+    scene island
+
+    "You are a famous movie star who has been working in the film business since about seven."
+    "Your first official role was when you played the main character of a Bisney film."
+    "Even though it didn't go well, you've been acting in movies and TV shows alike since then."
+    "Yesterday you got a call from your manager, something about a 'Chris McLean' hosting a tv show live."
+    "At first you weren't interested until she told you how much the producers are paying just to get on the show."
+    "Apart from the overbearing fans... surely it can't be that bad..."
+    "Right?"
+
+    
+    name = renpy.input("What's the name of the movie star?")
+    name = name.strip() or "Camper"
+
+    define us = Character([name])
+
+    us "test if new character works"
+
+
+
     # This ends the game.
 
     return
