@@ -88,6 +88,7 @@ label start:
     chris "Who will crumble under the pressure?"
     chris "Find out here, right now, on Total. Drama. Island! "
 
+chris "MajciRock says hi to Shady_Elf"
 
     #end of introduction, the character gets introduced
 
