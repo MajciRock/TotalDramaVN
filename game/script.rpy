@@ -7,6 +7,9 @@
 
 
 
+
+
+
 define chris = Character("Chris")
 define chef = Character("Chef")
 define ez = Character("Ezekiel")
@@ -120,7 +123,21 @@ label start:
 
     "You yell out while waving towards the camera."
     "You can notice a fat guy pushing all the people nearby to get to you."
+
+    show owen
+
     "He shakes your hand with pure excitement, radiating so much joy."
+    "???" "Oh my god! [name]!"
+    "???" "It's an honour to have you here, dude-"
+    "???" "I-i-i mean-"
+
+    show owen at left
+    show heather at right
+
+    "???" "He means that he doesn't know how to talk to celebrities."
+    heather "I'm Heather, by the way."
+
+    
 
 
     
