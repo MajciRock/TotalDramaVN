@@ -71,10 +71,12 @@ label start:
     with dissolve
 
     show chris happy
+    with dissolve
 
     chris "At the dramatic campfire ceremony, where each week, all but one camper will receive a marshmallow."
 
     show chris
+    with dissolve
 
     chris "In the end, only one will be left standing and will be rewarded with cheesy tabloid fame and a small fortune, which let’s face it, they’ll probably blow in a week."
     chris "To survive, they’ll have to battle… "
@@ -87,6 +89,7 @@ label start:
     with dissolve
     
     show chris happy
+    with dissolve
     
     chris "Who will crumble under the pressure?"
     chris "Find out here, right now, on Total. Drama. Island!"
@@ -96,6 +99,7 @@ label start:
         #end of introduction, the character gets introduced
 
     scene island
+    with dissolve
 
     "You are a famous movie star who has been working in the film business since about seven."
     "Your first official role was when you played the main character of a Bisney film."
@@ -113,6 +117,7 @@ label start:
 
     scene dock
     show chris happy
+    with dissolve
 
     chris "Before we continue, I want to introduce you all to a very special guest, you know them, you love them, this is probably the only chance you have in actually meeting them face to face!"
     chris "Famous teen star [name]!"
@@ -124,14 +129,16 @@ label start:
     
     hide chris happy
     show owen
+    with dissolve
 
     "He shakes your hand with pure excitement, radiating so much joy."
     "???" "Oh my god! [name]!"
     "???" "It's an honour to have you here, dude-"
     "???" "I-i-i mean-"
-
+    
     show owen at right
     show heather at left
+    with dissolve
 
     "???" "He means that he doesn't know how to talk to celebrities."
     heather "I'm Heather, by the way."
@@ -141,16 +148,18 @@ label start:
 
     hide owen
     hide heather
+    with dissolve
 
     "???" "OMG OMG OMG, Sadie, look!"
 
     show katie
-
+    with dissolve
     sadie "OMG, Katie. I know!"
 
     show sadie at left
     show katie at right
-    
+    with dissolve
+
     "Katie & Sadie" "It's super duper nice to meet you, [name]!"
 
     "They squeal so loudly that you had to place your hands on top of your ears, in fear that your eardrums might bleed out."
@@ -159,11 +168,13 @@ label start:
 
     
     show chris at center
+    with dissolve
 
     "Chris taps on his wrist, indicating we have to move along and dismisses both girls to stand beside you."
     
     hide sadie
     hide katie
+    with dissolve
 
     chris "I know how impatient you all are, especially because you've met another special celebrity just now."
     chris "But we need a group photo for the promos."
@@ -171,6 +182,7 @@ label start:
 
 
     show dock 
+    with dissolve
 
     "All 23 campers lined up on the dock, most teens arguing about who'd stand beside you."
     "Of course Chris put you in the direct center to stand out the most."

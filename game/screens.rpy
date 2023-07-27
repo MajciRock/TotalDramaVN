@@ -399,10 +399,13 @@ style main_menu_text:
 
 style main_menu_title:
     properties gui.text_properties("title")
+    color "#223333"
+    outlines [(0, "#000", 0, 0)]
 
 style main_menu_version:
     properties gui.text_properties("version")
-
+    color "#223333"
+    outlines [(0, "#000", 0, 0)]
 
 ## Game Menu screen ############################################################
 ##
