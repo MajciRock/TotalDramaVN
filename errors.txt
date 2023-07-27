@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 10: expected statement.
-    from turtle import left, right
-                           ^
+File "game/script.rpy", line 238: expected statement.
+    sceen campsite
+                  ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jul 27 13:24:16 2023
+Thu Jul 27 19:59:50 2023

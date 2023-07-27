@@ -7,7 +7,6 @@
 
 
 
-
 define chris = Character("Chris")
 define chef = Character("Chef")
 define ez = Character("Ezekiel")
@@ -150,10 +149,11 @@ label start:
     hide heather
     with dissolve
 
-    "???" "OMG OMG OMG, Sadie, look!"
-
     show katie
     with dissolve
+
+    "???" "OMG OMG OMG, Sadie, look!"
+
     sadie "OMG, Katie. I know!"
 
     show sadie at left
@@ -181,12 +181,15 @@ label start:
     chris "Everyone at the end of the dock!"
 
 
-    show dock 
+    hide chris
     with dissolve
 
     "All 23 campers lined up on the dock, most teens arguing about who'd stand beside you."
     "Of course Chris put you in the direct center to stand out the most."
     "The people who ended up standing beside you were a tanned boy with a dark green shirt, on the other side a blonde with a mini skirt and in front of you crouching, a brunette boy with a light yellow shirt."
+
+    show chris
+    with dissolve
 
     chris "Okay!"
     chris "One, two, three."
@@ -205,8 +208,262 @@ label start:
     chris "Okay guys. Dry off and meet me at the campfire pit in ten!"
     
     
+        #end of first scene, we're coming up to the campfire site where Chris introduces the game
+
+    hide chris
+
+    "You huff in annoyance, dragging yourself out of the water, scrunching up your shirt to get as much water out as possible."
+    "You can feel other peoples' stares, but you're already used to this."
+    "You are a celebrity after all."
+
+    "???" "Hi, [name]. I got your luggage from the water so you don't lose it."
+    "You look up. The blonde from the dock is handing you your suitcase."
+
+    show lindsay
+
+    us "Oh, hey. Thanks for that."
+    "???" "Yeah, no problem. Us models need to look our for each other after all."
+    "You smile at that and shake your head."
+    linds "I'm Lindsay, want to walk to the fire pit together?"
+    us "Sure thing, Lindsay."
+
+    "It was a short walk, instead of talking to the blonde, you used the remaining minute walking looking around."
+    "It looks worse than what you were promised."
+    "But it will do for the pay."
+
+    linds "So, [name]. I've seen you on so many shows, I've admired you since I little."
+    us "Aww, that's nice to hear, Lindsay. I am a role model for many children after all..."
+
+
+    scene campfire
+
+    "You remember when the last show you were at wasn't a big success, but that wasn't your fault."
+    "That's why as your punishment, your next gig was a rundown camp."
+    "But the manager talked about Chris being a star in his own way as well. That he has some special charm."
+    "Whatever that means..."
+
+
+    show lindsay
+
+    linds "Want to sit next to me, [name]?"
+    us "Uh, sure."
+
+    hide lindsay
+
+    "You sit down on a stump, seeing many different kinds of people around you."
+
+    show duncan
+    "You accidentally make eye contact with a guy in a green mohawk and he winks at you."
+    "You look away as fast as you looked at him and hear Chris cough to get all of your attention."
+    hide duncan
+
+    "When everyone quieted down, he continued speaking."
+    show chris
+
+    chris "This… is camp Wawanakwa."
+    chris "Your home for the next eight weeks."
+    chris "The campers sitting around you will be your cabinmates, your competition, and maybe even your friends. "
+    chris "The camper who manages to stay on Total Drama Island the longest without getting voted off will win $100,000!"
+
+    show chris at left
+    show duncan at right
+
+    duncan "‘Scuse me. What will the sleeping arrangements be?"
+    show heather at center
+    duncan "Because I’d like to request a bunk under her."
+    heather "They’re not co-ed, are they?"
+
+    chris "No. Girls get one side of each cabin and dudes, get the other."
+
+    hide duncan
+    hide heather
+
+    show katie at right
+    katie "I have to live with Sadie or I'll die!"
+
+    show sadie at center
+    sadie "And I’ll break out in hives. It’s true."
+
+    hide chris
+    hide sadie
+    hide katie
+
+    show gwen at right
+    gwen "This cannot be happening..."
+
+    show owen at center
+    owen "Aww, c’mon guys! It’ll be fun! It’s like a big sleepover!"
+
+    show tyler at left
+    tyler "At least you don’t have to sleep next to him."
+
+
+    hide owen
+    hide gwen
+    hide tyler
+
+
+    show chris
+    chris "Here’s the deal. We’re gonna split you into two teams. If I call your name out, go stand over there."
+    show gwen at right
+    chris "Gwen."
+    show trent at left
+    chris "Trent." 
+    hide gwen
+    show heather at right
+    chris "Heather."
+    hide trent
+    show cody at left
+    chris "Cody."
+    hide heather
+    show lindsay at right
+    chris "Lindsay."
+    hide cody
+    show beth at left
+    chris "Beth." 
+    hide lindsay
+    show katie at right
+    chris "Katie." 
+    hide beth
+    show owen at left
+    chris "Owen." 
+    hide katie
+    show leshawna at right
+    chris "Leshawna."
+    hide owen
+    show justin at left
+    chris "Justin."
+    hide leshawna
+    show noah at right
+    chris "And… Noah."
     
+    chris "From this moment on, you are officially known as… The Screaming Gophers!"
+
+    hide chris
+    hide noah
+    hide justin
+    show owen
+
+    owen "Yeah! I'm a Gopher! Woohoo!"
+    show katie at right
+
+    katie "Wait. What about Sadie?"
+
+    hide katie
+    hide owen
+    show chris
+
+    chris "The rest of you over here."
+    show geoff at left
+    chris "Geoff."
+    show bridgette at right
+    chris "Bridgette."
+    hide geoff
+    show dj at left
+    chris "DJ."
+    hide bridgette
+    show tyler at right
+    chris "Tyler."
+    hide dj
+    show sadie at left
+    chris "Sadie."
+    hide tyler
+    show izzy at right
+    chris "Izzy."
+    hide sadie
+    show courtney at left
+    chris "Courtney."
+    hide izzy
+    show ezekiel at right
+    chris "Ezekiel."
+    hide courtney
+    show duncan at left
+    chris "Duncan."
+    hide ezekiel
+    show eva at right
+    chris "Eva"
+    hide duncan
+    show harold at left 
+    chris "And... Harold!"
+    hide eva
+    hide harold
+    chris "Move, move, move, move!"
+
+    hide chris
+
+    show sadie
+    sadie "But Katie’s a Gopher! I have to be a Gopher!"
+    show courtney at left 
+    court "Sadie, is it? Come on. It’ll be okay."
+    sadie "This is so unfair! I miss you, Katie!"
+    show katie at right
+    katie "I miss you too!"
+
+    hide courtney 
+    hide sadie
+    hide katie
+
+    show chris
+    chris "You guys will officially be known as… The Killer Bass!"
+
+    show harold at right 
+    harold "It’s awesome. It’s like… Amazing."
+
+    hide harold
+    chris "All right, campers."
+    chris "You and your team will be on camera in all public areas during this competition."
     
+
+    "You interrupt Chris with waving your arm back and forth."
+    us "Didn't you forget something?"
+    chris "Aww, I didn't want to tell them later until the challenges began."
+    
+    "You look at Chris annoyed."
+    "You don't even know on which team you're on right now!"
+
+    chris "Well, since [name] is our special guest, they arrived here last minute."
+    chris "They weren't originally a part of this game, but their manager wanted us to include them!"
+    chris "So, after some thinking, we've decided upon ourselves that [name] will be part of the losing team."
+    chris "But since we haven't began the challenge yet, you can decide on which team you want to be."
+
+    chris "Will it be the Screaming Gophers... or the Killer Bass?"
+
+    show heather at left
+    heather "What?!"
+    heather "You can't just do that!"
+    heather "That's unfair!"
+
+    chris "Rules are rules."
+    hide heather
+    chris "So. Choose who you want to help in today's challenge."
+
+
+
+    menu:
+        "The Screaming Gophers":
+            jump choice1_SG
+
+        "The Killer Bass":
+            jump choice1_KB
+
+
+    label choice1_SG:
+        $ team = 'g'
+        chris "[name] is now a Gopher!"
+
+        jump choice1_done
+
+    label choice1_KB:
+        $ team = "b"
+        chris "[name] is now a Bass!"
+
+        jump choice1_done
+
+    label choice1_done:
+        chris "Anyway, let's continue on."
+
+
+
     # This ends the game.
 
     return
