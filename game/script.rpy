@@ -8,8 +8,6 @@
 
 
 
-
-
 define chris = Character("Chris")
 define chef = Character("Chef")
 define ez = Character("Ezekiel")
@@ -123,7 +121,8 @@ label start:
 
     "You yell out while waving towards the camera."
     "You can notice a fat guy pushing all the people nearby to get to you."
-
+    
+    hide chris happy
     show owen
 
     "He shakes your hand with pure excitement, radiating so much joy."
@@ -131,19 +130,71 @@ label start:
     "???" "It's an honour to have you here, dude-"
     "???" "I-i-i mean-"
 
-    show owen at left
-    show heather at right
+    show owen at right
+    show heather at left
 
     "???" "He means that he doesn't know how to talk to celebrities."
     heather "I'm Heather, by the way."
 
+    "You could notice some people rolling their eyes at this."
+    "But too much time hasn't passed until two new fans came running towards you, interrupting Heather."
+
+    hide owen
+    hide heather
+
+    "???" "OMG OMG OMG, Sadie, look!"
+
+    show katie
+
+    sadie "OMG, Katie. I know!"
+
+    show sadie at left
+    show katie at right
     
+    "Katie & Sadie" "It's super duper nice to meet you, [name]!"
+
+    "They squeal so loudly that you had to place your hands on top of your ears, in fear that your eardrums might bleed out."
+
 
 
     
+    show chris at center
+
+    "Chris taps on his wrist, indicating we have to move along and dismisses both girls to stand beside you."
+    
+    hide sadie
+    hide katie
+
+    chris "I know how impatient you all are, especially because you've met another special celebrity just now."
+    chris "But we need a group photo for the promos."
+    chris "Everyone at the end of the dock!"
 
 
+    show dock 
 
+    "All 23 campers lined up on the dock, most teens arguing about who'd stand beside you."
+    "Of course Chris put you in the direct center to stand out the most."
+    "The people who ended up standing beside you were a tanned boy with a dark green shirt, on the other side a blonde with a mini skirt and in front of you crouching, a brunette boy with a light yellow shirt."
+
+    chris "Okay!"
+    chris "One, two, three."
+    chris "Oops, forgot the lens cap!"
+    chris "Okay, hold that pose!"
+    chris "One! Tw- oh. No, wait. Card's full. Hang on."
+
+    "???" "Come on man, my face is startin' to freeze!"
+
+    chris "Got it. Okay, everyone say 'Wawanakwa!'"
+    "Everyone"  "Wawanakwa!"
+
+    "You could hear the dock giving up under you. All 23 of you fell into the icy cold water, swimming back to shore for dear life."
+    "Chris was laughing at this, he was standing on a boat this whole time after all, not getting wet the slightest bit."
+
+    chris "Okay guys. Dry off and meet me at the campfire pit in ten!"
+    
+    
+    
+    
     # This ends the game.
 
     return
