@@ -178,8 +178,8 @@ label start:
 
 
     show sadie with moveinleft:
-      xalign 0.07
-      yalign 1.0
+        xalign 0.07
+        yalign 1.0
     show chris at center
     with dissolve
 
@@ -324,8 +324,8 @@ label start:
     owen "Aww, c’mon guys! It’ll be fun! It’s like a big sleepover!"
 
     show tyler:
-       xalign 0.07
-       yalign 1.0
+        xalign 0.07
+        yalign 1.0
     with dissolve
     tyler "At least you don’t have to sleep next to him."
 
@@ -409,8 +409,8 @@ label start:
     chris "Bridgette."
     hide geoff
     show dj:
-       xalign 0.10
-       yalign 1.0
+        xalign 0.10
+        yalign 1.0
     with dissolve
     chris "DJ."
     hide bridgette
@@ -419,8 +419,8 @@ label start:
     chris "Tyler."
     hide dj
     show sadie:
-       xalign 0.10
-       yalign 1.0
+        xalign 0.10
+        yalign 1.0
     with dissolve
     chris "Sadie."
     hide tyler
@@ -528,21 +528,28 @@ label start:
 
         hide chris
         show gwen at slightleft
+        with dissolve
+
         "The teal haired girl smiles at you,"
         show trent at slightright
+        with dissolve
         "and so does the boy who had the guitar earlier on himself."
 
         hide gwen
         hide trent
+        with dissolve
 
         show lindsay
+        with dissolve
         "Lindsay's jumping out of joy and clapping her hands while squealing."
         show owen at right 
+        with dissolve
         "???" "Woohooo!"
         "???" "[name] is on our team! The party can start now!"
 
         hide lindsay
         hide owen
+        with dissolve
 
         jump choice1_done
 
@@ -555,23 +562,29 @@ label start:
 
         hide chris
         show duncan at slightright
+        with dissolve
         "The guy who winked at you earlier is smirking now."
         show courtney at slightleft
+        with dissolve
         "A prepped up girl is smiling at you gently and proudly. Giving you a small wave."
 
         hide duncan
-        hide courtney 
+        hide courtney
+        with dissolve
 
-        show Katie at slightright
-        show Sadie at slightleft
+        show katie at slightright
+        show sadie at slightleft
+        with dissolve
         "Katie and Sadie act like enormous fangirls, they're holding their hands while squealing and jumping around in joy."
 
         show geoff
+        with dissolve
         "???" "Rad, man. We got [name] on our team."
 
         hide katie
         hide sadie
         hide geoff
+        with dissolve
 
         jump choice1_done
 
@@ -579,6 +592,7 @@ label start:
 
     label choice1_done:
         show chris
+        with dissolve
         chris "Quiet down, campers."
         chris "[name] might change teams in the future either way, so don't be too sad about it."
         chris "The more you lose, the more time you can spend with them!"
@@ -587,6 +601,7 @@ label start:
 
         scene cabins 
         show chris
+        with fade
 
         chris "All right, campers."
         chris "You and your team will be on camera in all public areas during this competition."
@@ -600,6 +615,7 @@ label start:
         chris "Or it might just help to get something off your chest."
 
         scene confessional
+        with fade
         "As you get inside the confessional you nearly puke."
         us "Oh my god, it stinks in here!"
         us "And I have to be in here EVERYDAY."
@@ -607,6 +623,7 @@ label start:
 
         scene cabins 
         show chris
+        with fade
 
         chris "All right. Any questions?"
         chris "Cool. Let's find your cabins."
@@ -619,15 +636,18 @@ label start:
 
         "Most campers groan at this, but Heather of course doesn't stay silent."
         show heather at slightleft
+        with dissolve
         heather "And where is joy in making them stay at a special place while everyone is here? Huh?"
         chris "They don't need to move cabins all the time during their stay on the island."
         heather "THAT... that actually makes sense."
         "She groans and crosses her arms."
         hide heather
+        with dissolve
 
         chris "You can all get comfy inside of your cabins."
         chris "I'm just going to show [name] where they can leave all their stuff."
         hide chris
+        with dissolve
 
         "Most campers were already hurrying towards their new cabins."
         "Some were looking back at you, maybe thinking of following you."
@@ -635,7 +655,8 @@ label start:
         "You hurried along, cathing up to him."
         
         scene dock
-        show chris 
+        show chris
+        with fade 
         chris "Okay, [name]."
         chris "You'll be staying in a mini van next to the cabin me and Chef are sharing."
         chris "Since you arrived last minute I couldn't afford anything more special for you."
