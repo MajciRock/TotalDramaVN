@@ -523,19 +523,145 @@ label start:
     label choice1_SG:
         $ team = 'g'
         chris "[name] is now a Gopher!"
+        "You can hear your team cheering and the other one letting out many awws."
+        "You look at your team."
+
+        hide chris
+        show gwen at slightleft
+        "The teal haired girl smiles at you,"
+        show trent at slightright
+        "and so does the boy who had the guitar earlier on himself."
+
+        hide gwen
+        hide trent
+
+        show lindsay
+        "Lindsay's jumping out of joy and clapping her hands while squealing."
+        show owen at right 
+        "???" "Woohooo!"
+        "???" "[name] is on our team! The party can start now!"
+
+        hide lindsay
+        hide owen
 
         jump choice1_done
+
 
     label choice1_KB:
         $ team = "b"
         chris "[name] is now a Bass!"
+        "You can hear your team cheering and the other one letting out many awws."
+        "You look at your team."
+
+        hide chris
+        show duncan at slightright
+        "The guy who winked at you earlier is smirking now."
+        show courtney at slightleft
+        "A prepped up girl is smiling at you gently and proudly. Giving you a small wave."
+
+        hide duncan
+        hide courtney 
+
+        show Katie at slightright
+        show Sadie at slightleft
+        "Katie and Sadie act like enormous fangirls, they're holding their hands while squealing and jumping around in joy."
+
+        show geoff
+        "???" "Rad, man. We got [name] on our team."
+
+        hide katie
+        hide sadie
+        hide geoff
 
         jump choice1_done
 
+
+
     label choice1_done:
-        chris "Anyway, let's continue on."
+        show chris
+        chris "Quiet down, campers."
+        chris "[name] might change teams in the future either way, so don't be too sad about it."
+        chris "The more you lose, the more time you can spend with them!"
+
+        "Chris chuckles in delight and moves along towards the campsite."
+
+        scene cabins 
+        show chris
+
+        chris "All right, campers."
+        chris "You and your team will be on camera in all public areas during this competition."
+        chris "You will also be able to share your innermost thoughts on tape with video diaries anytime you want."
+        chris "Except for [name]."
+        chris "They have to share their thoughts at least once a day to update the whole world how your living environment is."
+        us "But... why only me?"
+        chris "Manager's orders."
+        "You roll your eyes at this and sigh, but keep listening to Chris."
+        chris "The confessional is for letting the audience at home know what you're really thinking."
+        chris "Or it might just help to get something off your chest."
+
+        scene confessional
+        "As you get inside the confessional you nearly puke."
+        us "Oh my god, it stinks in here!"
+        us "And I have to be in here EVERYDAY."
+        us "At least I don't have to come here today anymore... except if I really wanted to say something to the world."
+
+        scene cabins 
+        show chris
+
+        chris "All right. Any questions?"
+        chris "Cool. Let's find your cabins."
+
+        "Chris gets closer to the cabins to show which one is whose."
+        chris "Gophers, you’re in the east cabins."
+        chris "Bass, you’re in the west."
+        chris "But [name] is in neither!"
+        chris "They'll be staying at the campsite where me and my buddy Chef will be enjoying gourmet cousine together, while everyone else will be enjoying the slob he cooks."
+
+        "Most campers groan at this, but Heather of course doesn't stay silent."
+        show heather at slightleft
+        heather "And where is joy in making them stay at a special place while everyone is here? Huh?"
+        chris "They don't need to move cabins all the time during their stay on the island."
+        heather "THAT... that actually makes sense."
+        "She groans and crosses her arms."
+        hide heather
+
+        chris "You can all get comfy inside of your cabins."
+        chris "I'm just going to show [name] where they can leave all their stuff."
+        hide chris
+
+        "Most campers were already hurrying towards their new cabins."
+        "Some were looking back at you, maybe thinking of following you."
+        "But Chris had already left and started walking in a different direction."
+        "You hurried along, cathing up to him."
+        
+        scene dock
+        show chris 
+        chris "Okay, [name]."
+        chris "You'll be staying in a mini van next to the cabin me and Chef are sharing."
+        chris "Since you arrived last minute I couldn't afford anything more special for you."
+        chris "Anyway, I wanted to ask you something."
+        chris "How much do you care about ratings? The ratings of the shows you star in?"
+
+        menu:
+            "I care a lot about the ratings.":
+                jump choice2_Alot
+
+            "I care a little bit.":
+                jump choice2_Little
+
+            "I don't think about them.":
+                jump choice2_Nope
 
 
+
+        label choice2_Alot:
+            "They're the most important thing in shows."
+
+        label choice2_Little:
+            "I want them to be good but I won't go to drastic measures."
+
+        label choice2_Nope:
+                "I don't care about those things at all."
 
     # This ends the game.
 

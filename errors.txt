@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 238: expected statement.
-    sceen campsite
-                  ^
+File "game/script.rpy", line 541: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+            "???"" "Woohooo!"
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jul 27 19:59:50 2023
+Fri Jul 28 13:47:59 2023
