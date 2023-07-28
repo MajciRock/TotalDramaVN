@@ -7,6 +7,14 @@
 
 
 
+transform slightleft:
+    xalign 0.15
+    yalign 1.0
+ 
+transform slightright:
+    xalign 0.85
+    yalign 1.0  
+
 define chris = Character("Chris")
 define chef = Character("Chef")
 define ez = Character("Ezekiel")
@@ -49,6 +57,8 @@ label start:
 
             
     scene dock
+
+    play music "waterfall.mp3" fadein 1.0 loop
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -136,8 +146,8 @@ label start:
     "???" "It's an honour to have you here, dude-"
     "???" "I-i-i mean-"
     
-    show owen at right
-    show heather at left
+    show owen at slightright
+    show heather at slightleft
     with dissolve
 
     "???" "He means that he doesn't know how to talk to celebrities."
@@ -157,8 +167,8 @@ label start:
 
     sadie "OMG, Katie. I know!"
 
-    show sadie at left
-    show katie at right
+    show sadie at slightleft
+    show katie at slightright
     with dissolve
 
     "Katie & Sadie" "It's super duper nice to meet you, [name]!"
@@ -167,7 +177,9 @@ label start:
 
 
 
-    
+    show sadie with moveinleft:
+      xalign 0.07
+      yalign 1.0
     show chris at center
     with dissolve
 
@@ -212,6 +224,7 @@ label start:
         #end of first scene, we're coming up to the campfire site where Chris introduces the game
 
     hide chris
+    with dissolve
 
     "You huff in annoyance, dragging yourself out of the water, scrunching up your shirt to get as much water out as possible."
     "You can feel other peoples' stares, but you're already used to this."
@@ -221,6 +234,7 @@ label start:
     "You look up. The blonde from the dock is handing you your suitcase."
 
     show lindsay
+    with dissolve
 
     us "Oh, hey. Thanks for that."
     "???" "Yeah, no problem. Us models need to look our for each other after all."
@@ -237,6 +251,7 @@ label start:
 
 
     scene campfire
+    with dissolve
 
     "You remember when the last show you were at wasn't a big success, but that wasn't your fault."
     "That's why as your punishment, your next gig was a rundown camp."
@@ -245,32 +260,39 @@ label start:
 
 
     show lindsay
+    with dissolve
 
     linds "Want to sit next to me, [name]?"
     us "Uh, sure."
 
     hide lindsay
+    with dissolve
 
     "You sit down on a stump, seeing many different kinds of people around you."
 
     show duncan
+    with dissolve
     "You accidentally make eye contact with a guy in a green mohawk and he winks at you."
     "You look away as fast as you looked at him and hear Chris cough to get all of your attention."
     hide duncan
+    with dissolve
 
     "When everyone quieted down, he continued speaking."
     show chris
+    with dissolve
 
     chris "This… is camp Wawanakwa."
     chris "Your home for the next eight weeks."
     chris "The campers sitting around you will be your cabinmates, your competition, and maybe even your friends. "
     chris "The camper who manages to stay on Total Drama Island the longest without getting voted off will win $100,000!"
 
-    show chris at left
-    show duncan at right
+    show chris at slightleft with moveinleft
+    show duncan at slightright
+    with dissolve
 
     duncan "‘Scuse me. What will the sleeping arrangements be?"
     show heather at center
+    with dissolve
     duncan "Because I’d like to request a bunk under her."
     heather "They’re not co-ed, are they?"
 
@@ -278,139 +300,187 @@ label start:
 
     hide duncan
     hide heather
+    with dissolve
 
-    show katie at right
+    show katie at slightright
+    with dissolve
     katie "I have to live with Sadie or I'll die!"
 
     show sadie at center
+    with dissolve
     sadie "And I’ll break out in hives. It’s true."
 
     hide chris
     hide sadie
     hide katie
+    with dissolve
 
-    show gwen at right
+    show gwen at slightright
+    with dissolve
     gwen "This cannot be happening..."
 
     show owen at center
+    with dissolve
     owen "Aww, c’mon guys! It’ll be fun! It’s like a big sleepover!"
 
-    show tyler at left
+    show tyler:
+       xalign 0.07
+       yalign 1.0
+    with dissolve
     tyler "At least you don’t have to sleep next to him."
 
 
     hide owen
     hide gwen
     hide tyler
-
+    with dissolve
 
     show chris
+    with dissolve
     chris "Here’s the deal. We’re gonna split you into two teams. If I call your name out, go stand over there."
-    show gwen at right
+    show gwen at slightright
+    with dissolve
     chris "Gwen."
-    show trent at left
+    show trent at slightleft
+    with dissolve
     chris "Trent." 
     hide gwen
-    show heather at right
+    show heather at slightright
+    with dissolve
     chris "Heather."
     hide trent
-    show cody at left
+    show cody at slightleft
+    with dissolve
     chris "Cody."
     hide heather
-    show lindsay at right
+    show lindsay at slightright
+    with dissolve
     chris "Lindsay."
     hide cody
-    show beth at left
+    show beth at slightleft
+    with dissolve
     chris "Beth." 
     hide lindsay
-    show katie at right
+    show katie at slightright
+    with dissolve
     chris "Katie." 
     hide beth
     show owen at left
+    with dissolve
     chris "Owen." 
     hide katie
-    show leshawna at right
+    show leshawna at slightright
+    with dissolve
     chris "Leshawna."
     hide owen
-    show justin at left
+    show justin at slightleft
+    with dissolve
     chris "Justin."
     hide leshawna
-    show noah at right
+    show noah at slightright
+    with dissolve
     chris "And… Noah."
-    
+
     chris "From this moment on, you are officially known as… The Screaming Gophers!"
 
     hide chris
     hide noah
     hide justin
     show owen
+    with dissolve
 
     owen "Yeah! I'm a Gopher! Woohoo!"
-    show katie at right
+    show katie at slightright
+    with dissolve
 
     katie "Wait. What about Sadie?"
 
     hide katie
     hide owen
     show chris
+    with dissolve
 
     chris "The rest of you over here."
-    show geoff at left
+    show geoff at slightleft
+    with dissolve
     chris "Geoff."
-    show bridgette at right
+    show bridgette at slightright
+    with dissolve
     chris "Bridgette."
     hide geoff
-    show dj at left
+    show dj:
+       xalign 0.10
+       yalign 1.0
+    with dissolve
     chris "DJ."
     hide bridgette
-    show tyler at right
+    show tyler at slightright
+    with dissolve
     chris "Tyler."
     hide dj
-    show sadie at left
+    show sadie:
+       xalign 0.10
+       yalign 1.0
+    with dissolve
     chris "Sadie."
     hide tyler
-    show izzy at right
+    show izzy at slightright
+    with dissolve
     chris "Izzy."
     hide sadie
-    show courtney at left
+    show courtney at slightleft
+    with dissolve
     chris "Courtney."
     hide izzy
-    show ezekiel at right
+    show ezekiel at slightright
+    with dissolve
     chris "Ezekiel."
     hide courtney
-    show duncan at left
+    show duncan at slightleft
+    with dissolve
     chris "Duncan."
     hide ezekiel
-    show eva at right
+    show eva at slightright
+    with dissolve
     chris "Eva"
     hide duncan
-    show harold at left 
+    show harold at slightleft
+    with dissolve
     chris "And... Harold!"
     hide eva
     hide harold
+    with dissolve
     chris "Move, move, move, move!"
 
     hide chris
+    with dissolve
 
     show sadie
+    with dissolve
     sadie "But Katie’s a Gopher! I have to be a Gopher!"
-    show courtney at left 
+    show courtney at slightleft 
+    with dissolve
     court "Sadie, is it? Come on. It’ll be okay."
     sadie "This is so unfair! I miss you, Katie!"
-    show katie at right
+    show katie at slightright
+    with dissolve
     katie "I miss you too!"
 
     hide courtney 
     hide sadie
     hide katie
+    with dissolve
 
     show chris
+    with dissolve
     chris "You guys will officially be known as… The Killer Bass!"
 
-    show harold at right 
+    show harold at slightright
+    with dissolve
     harold "It’s awesome. It’s like… Amazing."
 
     hide harold
+    with dissolve
     chris "All right, campers."
     chris "You and your team will be on camera in all public areas during this competition."
     
@@ -429,13 +499,15 @@ label start:
 
     chris "Will it be the Screaming Gophers... or the Killer Bass?"
 
-    show heather at left
+    show heather at slightleft
+    with dissolve
     heather "What?!"
     heather "You can't just do that!"
     heather "That's unfair!"
 
     chris "Rules are rules."
     hide heather
+    with dissolve
     chris "So. Choose who you want to help in today's challenge."
 
 
