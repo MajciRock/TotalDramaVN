@@ -19,7 +19,7 @@ define chris = Character("Chris")
 define chef = Character("Chef")
 define ez = Character("Ezekiel")
 define noah = Character("Noah")
-define justin = Character("Justin")
+define just = Character("Justin")
 define katie = Character("Katie")
 define tyler = Character("Tyler")
 define cody = Character("Cody")
@@ -34,7 +34,7 @@ define linds = Character("Lindsay")
 define dj = Character("DJ")
 define izzy = Character("Izzy")
 define geoff = Character("Geoff")
-define leshawna = Character("Leshawna")
+define lesh = Character("Leshawna")
 define duncan = Character("Duncan")
 define heather = Character("Heather")
 define gwen = Character("Gwen")
@@ -42,7 +42,103 @@ define owen = Character("Owen")
 
 define us = Character("[name]")
 
-    # We still need to create our own character user, but for that we need to add our name as well.
+
+
+#Beginning frienship level with all the characters from 0 to 10
+#Every starting level if they're not a fan or don't know much about us starts with 3.
+#The maximum starting level is 4.5 of a friendship.
+#When the friend level reaches above 7.5 then relationships options can be possible.
+
+
+$ fri_ez = 3.0
+if fri_ez > 7.5:
+    $ rel_ez = 0
+
+$ fri_noah = 3.6
+if fri_noah > 7.5:
+    $ rel_noah = 0
+
+$ fri_just = 3.8
+if fri_just > 7.5:
+    $ rel_just = 0
+
+$ fri_katie = 4.5
+if fri_katie > 7.5:
+    $ rel_katie = 0
+
+$ fri_tyler = 3.3
+if fri_tyler > 7.5:
+    $ rel_tyler = 0
+
+$ fri_cody = 4.5
+if fri_cody > 7.5:
+    $ rel_cody = 0
+
+$ fri_beth = 4.0
+if fri_beth > 7.5:
+    $ rel_beth = 0
+
+$ fri_sadie = 4.5
+if fri_sadie > 7.5:
+    $ rel_sadie = 0
+
+$ fri_court = 3.5
+if fri_court > 7.5:
+    $ rel_court = 0
+
+$ fri_harold = 4.0
+if fri_harold > 7.5:
+    $ rel_harold = 0
+
+$ fri_eva = 3.5
+if fri_eva > 7.5:
+    $ rel_eva = 0
+
+$ fri_trent = 4.2
+if fri_trent > 7.5:
+    $ rel_trent = 0
+
+$ fri_bridge = 3.6
+if fri_bridge > 7.5:
+    $ rel_bridge = 0
+
+$ fri_linds = 4.4
+if fri_linds > 7.5:
+    $ rel_linds = 0
+
+$ fri_dj = 3.5
+if fri_dj > 7.5:
+    $ rel_dj = 0
+
+$ fri_izzy = 3.1
+if fri_izzy > 7.5:
+    $ rel_izzy = 0
+
+$ fri_geoff = 3.4
+if fri_geoff > 7.5:
+    $ rel_geoff = 0
+
+$ fri_lesh = 3.7
+if fri_lesh > 7.5:
+    $ rel_lesh = 0
+
+$ fri_duncan = 3.2
+if fri_duncan > 7.5:
+    $ rel_duncan = 0
+
+$ fri_heather = 3.3
+if fri_heather > 7.5:
+    $ rel_heather = 0
+
+$ fri_gwen = 4.2
+if fri_gwen > 7.5:
+    $ rel_gwen = 0
+
+$ fri_owen = 4.5
+if fri_owen > 7.5:
+    $ rel_owen = 0
+
+
 
 
 
@@ -246,7 +342,7 @@ label start:
     "It looks worse than what you were promised."
     "But it will do for the pay."
 
-    linds "So, [name]. I've seen you on so many shows, I've admired you since I little."
+    linds "So, [name]. I've seen you on so many shows, I've admired you since I was little."
     us "Aww, that's nice to hear, Lindsay. I am a role model for many children after all..."
 
 
@@ -522,6 +618,22 @@ label start:
 
     label choice1_SG:
         $ team = 'g'
+
+        $ fri_gwen += 0.1
+        $ fri_beth += 0.1
+        $ fri_trent += 0.1
+        $ fri_just += 0.1
+        $ fri_leshawna += 0.1
+        $ fri_noah += 0.1
+        $ fri_katie += 0.2
+        $ fri_heather += 0.2
+        $ fri_linds += 0.2
+        $ fri_owen += 0.2
+        $ fri_cody += 0.2
+        
+        $ fri_sadie -= 0.1
+
+        
         chris "[name] is now a Gopher!"
         "You can hear your team cheering and the other one letting out many awws."
         "You look at your team."
@@ -556,6 +668,27 @@ label start:
 
     label choice1_KB:
         $ team = "b"
+
+        $ fri_eva += 0.1
+        $ fri_court += 0.1
+        $ fri_duncan += 0.1
+        $ fri_izzy += 0.1
+        $ fri_bridge += 0.1
+        $ fri_geoff += 0.1
+        $ fri_ez += 0.1
+        $ fri_tyler += 0.1
+        $ fri_dj += 0.1
+        $ fri_harold += 0.1
+        $ fri_sadie += 0.2
+
+        $ fri_owen -= 0.1
+        $ fri_katie -= 0.1
+        $ fri_linds -= 0.1
+        $ fri_cody -= 0.1
+        $ fri_heather -= 0.1
+
+
+
         chris "[name] is now a Bass!"
         "You can hear your team cheering and the other one letting out many awws."
         "You look at your team."
@@ -652,7 +785,7 @@ label start:
         "Most campers were already hurrying towards their new cabins."
         "Some were looking back at you, maybe thinking of following you."
         "But Chris had already left and started walking in a different direction."
-        "You hurried along, cathing up to him."
+        "You hurry along, cathing up to him."
         
         scene dock
         show chris
