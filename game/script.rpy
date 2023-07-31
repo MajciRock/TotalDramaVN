@@ -7,6 +7,7 @@
 
 
 
+
 transform slightleft:
     xalign 0.15
     yalign 1.0
@@ -50,91 +51,91 @@ define us = Character("[name]")
 #When the friend level reaches above 7.5 then relationships options can be possible.
 
 
-$ fri_ez = 3.0
+default fri_ez = 3.0
 if fri_ez > 7.5:
     $ rel_ez = 0
 
-$ fri_noah = 3.6
+default fri_noah = 3.6
 if fri_noah > 7.5:
     $ rel_noah = 0
 
-$ fri_just = 3.8
+default fri_just = 3.8
 if fri_just > 7.5:
     $ rel_just = 0
 
-$ fri_katie = 4.5
+default fri_katie = 4.5
 if fri_katie > 7.5:
     $ rel_katie = 0
 
-$ fri_tyler = 3.3
+default fri_tyler = 3.3
 if fri_tyler > 7.5:
     $ rel_tyler = 0
 
-$ fri_cody = 4.5
+default fri_cody = 4.5
 if fri_cody > 7.5:
     $ rel_cody = 0
 
-$ fri_beth = 4.0
+default fri_beth = 4.0
 if fri_beth > 7.5:
     $ rel_beth = 0
 
-$ fri_sadie = 4.5
+default fri_sadie = 4.5
 if fri_sadie > 7.5:
     $ rel_sadie = 0
 
-$ fri_court = 3.5
+default fri_court = 3.5
 if fri_court > 7.5:
     $ rel_court = 0
 
-$ fri_harold = 4.0
+default fri_harold = 4.0
 if fri_harold > 7.5:
     $ rel_harold = 0
 
-$ fri_eva = 3.5
+default fri_eva = 3.5
 if fri_eva > 7.5:
     $ rel_eva = 0
 
-$ fri_trent = 4.2
+default fri_trent = 4.2
 if fri_trent > 7.5:
     $ rel_trent = 0
 
-$ fri_bridge = 3.6
+default fri_bridge = 3.6
 if fri_bridge > 7.5:
     $ rel_bridge = 0
 
-$ fri_linds = 4.4
+default fri_linds = 4.4
 if fri_linds > 7.5:
     $ rel_linds = 0
 
-$ fri_dj = 3.5
+default fri_dj = 3.5
 if fri_dj > 7.5:
     $ rel_dj = 0
 
-$ fri_izzy = 3.1
+default fri_izzy = 3.1
 if fri_izzy > 7.5:
     $ rel_izzy = 0
 
-$ fri_geoff = 3.4
+default fri_geoff = 3.4
 if fri_geoff > 7.5:
     $ rel_geoff = 0
 
-$ fri_lesh = 3.7
+default fri_lesh = 3.7
 if fri_lesh > 7.5:
     $ rel_lesh = 0
 
-$ fri_duncan = 3.2
+default fri_duncan = 3.2
 if fri_duncan > 7.5:
     $ rel_duncan = 0
 
-$ fri_heather = 3.3
+default fri_heather = 3.3
 if fri_heather > 7.5:
     $ rel_heather = 0
 
-$ fri_gwen = 4.2
+default fri_gwen = 4.2
 if fri_gwen > 7.5:
     $ rel_gwen = 0
 
-$ fri_owen = 4.5
+default fri_owen = 4.5
 if fri_owen > 7.5:
     $ rel_owen = 0
 
@@ -386,10 +387,10 @@ label start:
     show duncan at slightright
     with dissolve
 
-    duncan "‘Scuse me. What will the sleeping arrangements be?"
+    "???" "‘Scuse me. What will the sleeping arrangements be?"
     show heather at center
     with dissolve
-    duncan "Because I’d like to request a bunk under her."
+    "???" "Because I’d like to request a bunk under her."
     heather "They’re not co-ed, are they?"
 
     chris "No. Girls get one side of each cabin and dudes, get the other."
@@ -413,11 +414,11 @@ label start:
 
     show gwen at slightright
     with dissolve
-    gwen "This cannot be happening..."
+    "???" "This cannot be happening..."
 
     show owen at center
     with dissolve
-    owen "Aww, c’mon guys! It’ll be fun! It’s like a big sleepover!"
+    "???" "Aww, c’mon guys! It’ll be fun! It’s like a big sleepover!"
 
     show tyler:
         xalign 0.07
@@ -623,7 +624,7 @@ label start:
         $ fri_beth += 0.1
         $ fri_trent += 0.1
         $ fri_just += 0.1
-        $ fri_leshawna += 0.1
+        $ fri_lesh += 0.1
         $ fri_noah += 0.1
         $ fri_katie += 0.2
         $ fri_heather += 0.2
@@ -656,8 +657,8 @@ label start:
         "Lindsay's jumping out of joy and clapping her hands while squealing."
         show owen at right 
         with dissolve
-        "???" "Woohooo!"
-        "???" "[name] is on our team! The party can start now!"
+        owen "Woohooo!"
+        owen "[name] is on our team! The party can start now!"
 
         hide lindsay
         hide owen
@@ -712,7 +713,7 @@ label start:
 
         show geoff
         with dissolve
-        "???" "Rad, man. We got [name] on our team."
+        geoff "Rad, man. We got [name] on our team."
 
         hide katie
         hide sadie
@@ -798,7 +799,7 @@ label start:
 
         menu:
             "I care a lot about the ratings.":
-                jump choice2_Alot
+                jump choice2_Lots
 
             "I care a little bit.":
                 jump choice2_Little
@@ -806,16 +807,102 @@ label start:
             "I don't think about them.":
                 jump choice2_Nope
 
+            "Well..."
 
 
-        label choice2_Alot:
+        label choice2_Lots:
             "They're the most important thing in shows."
+            $ sabotage = True
+            $ manipulation = True 
+
+            chris "I totally agree!"
+            chris "I'm glad we're on the same page here."
+
+            us "Yeah... So why were you asking me this?"
+            "Chris smirks at you."
+
+            chris "I would like you to cause some chaos in the teams while you'll be participating."
+            "You get intrigued by Chris."
+            "Seems like he knows what he's talking about."
+
+            us "Yes? Continue?"
+
+            chris "Well, I think you can find some interesting ways to sabotage or manipulate people here."
+            chris "While we're at OUR campsite, we can talk about these things."
+            chris "Even now, the cameras are off. So no one would know that we're planning to cause chaos."
+
+            us "I'm in. But how will I know what to do?"
+
+            chris "You can simply come ask me for some 'dirt' on the other campers to use for your tasks."
+            chris "Or do whatever you think is right at that moment."
+            chris "We watch the footage every now and then regarding everything that's been going on around the island."
+            chris "But the things we'll definitely rewatch? The confessionals. Where only me and the audience knows what's going on."
+            chris "For those, I can just hint to you what's going on. Otherwise the audince will know you're not a fair player, but we can say you're observant instead."
+
+            chris "What do you say?"
+
+
+            menu:
+                "You will sabotage and manipulate during the competition.":
+                    jump choice2_1_both
+
+                "You might sabotage or manipulate during the competition.":
+                    jump choice2_1_maybe
+
+                "You will play without sabotaging or manipulating. in the competition.":
+                    jump choice2_1_none
+
+
+
+                label choice2_1_both:
+                    us "It's a deal! The audience should have a show they won't forget!"
+                    "Chris chuckles."
+                    chris "That's what I hoped for."
+                    chris "I knew it was a good idea getting you on the show!"
+                    us "Technically my man-"
+                    chris "The deets aren't important! Let's check out your ven."
+
+
+                label choice2_1_maybe:
+                    "smth"
+
+
+                label choice2_1_none:
+
+
+
+            jump choice2_done
+
 
         label choice2_Little:
             "I want them to be good but I won't go to drastic measures."
+            $ sabotage = True
+            $ manipulation = False
+
+
+
+
+
+
+            jump choice2_done
 
         label choice2_Nope:
-                "I don't care about those things at all."
+            "I don't care about those things at all."
+            $ sabotage = False 
+            $ manipulaton = False
+
+
+
+
+            jump choice2_done
+
+
+
+        label choice2_done:
+            chris "I guess so."
+
+
+
 
     # This ends the game.
 
