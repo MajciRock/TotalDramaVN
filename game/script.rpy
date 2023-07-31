@@ -854,7 +854,7 @@ label start:
 
 
 
-                label choice2_1_both:
+                    label choice2_1_both:
                     us "It's a deal! The audience should have a show they won't forget!"
                     "Chris chuckles."
                     chris "That's what I hoped for."
@@ -863,11 +863,11 @@ label start:
                     chris "The deets aren't important! Let's check out your ven."
 
 
-                label choice2_1_maybe:
+                    label choice2_1_maybe:
                     "smth"
 
 
-                label choice2_1_none:
+                    label choice2_1_none:
 
 
 
