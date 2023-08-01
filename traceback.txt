@@ -1,26 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 626, in script
-    $ fri_leshawna += 0.1
-  File "game/script.rpy", line 626, in <module>
-    $ fri_leshawna += 0.1
-NameError: name 'fri_leshawna' is not defined
+  File "game/script.rpy", line 873, in script
+    jump choice2_1_both
+ScriptError: could not find label 'choice2_1_both'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 626, in script
-    $ fri_leshawna += 0.1
-  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 626, in <module>
-    $ fri_leshawna += 0.1
-NameError: name 'fri_leshawna' is not defined
+  File "game/script.rpy", line 873, in script
+    jump choice2_1_both
+  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Uporabnik\Desktop\Ustvarjalna dela\Total Drama\Total Drama Visual Novel\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choice2_1_both'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 Total Drama Visual Novel 1.0
-Mon Jul 31 19:09:50 2023
+Tue Aug  1 19:10:42 2023

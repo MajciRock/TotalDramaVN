@@ -53,92 +53,116 @@ define us = Character("[name]")
 
 default fri_ez = 3.0
 if fri_ez > 7.5:
-    $ rel_ez = 0
+    default rel_ez = 0
 
 default fri_noah = 3.6
 if fri_noah > 7.5:
-    $ rel_noah = 0
+    default rel_noah = 0
 
 default fri_just = 3.8
 if fri_just > 7.5:
-    $ rel_just = 0
+    default rel_just = 0
 
 default fri_katie = 4.5
 if fri_katie > 7.5:
-    $ rel_katie = 0
+    default rel_katie = 0
 
 default fri_tyler = 3.3
 if fri_tyler > 7.5:
-    $ rel_tyler = 0
+    default rel_tyler = 0
 
 default fri_cody = 4.5
 if fri_cody > 7.5:
-    $ rel_cody = 0
+    default rel_cody = 0
 
 default fri_beth = 4.0
 if fri_beth > 7.5:
-    $ rel_beth = 0
+    default rel_beth = 0
 
 default fri_sadie = 4.5
 if fri_sadie > 7.5:
-    $ rel_sadie = 0
+    default rel_sadie = 0
 
 default fri_court = 3.5
 if fri_court > 7.5:
-    $ rel_court = 0
+    default rel_court = 0
 
 default fri_harold = 4.0
 if fri_harold > 7.5:
-    $ rel_harold = 0
+    default rel_harold = 0
 
 default fri_eva = 3.5
 if fri_eva > 7.5:
-    $ rel_eva = 0
+    default rel_eva = 0
 
 default fri_trent = 4.2
 if fri_trent > 7.5:
-    $ rel_trent = 0
+    default rel_trent = 0
 
 default fri_bridge = 3.6
 if fri_bridge > 7.5:
-    $ rel_bridge = 0
+    default rel_bridge = 0
 
 default fri_linds = 4.4
 if fri_linds > 7.5:
-    $ rel_linds = 0
+    default rel_linds = 0
 
 default fri_dj = 3.5
 if fri_dj > 7.5:
-    $ rel_dj = 0
+    default rel_dj = 0
 
 default fri_izzy = 3.1
 if fri_izzy > 7.5:
-    $ rel_izzy = 0
+    default rel_izzy = 0
 
 default fri_geoff = 3.4
 if fri_geoff > 7.5:
-    $ rel_geoff = 0
+    default rel_geoff = 0
 
 default fri_lesh = 3.7
 if fri_lesh > 7.5:
-    $ rel_lesh = 0
+    default rel_lesh = 0
 
 default fri_duncan = 3.2
 if fri_duncan > 7.5:
-    $ rel_duncan = 0
+    default rel_duncan = 0
 
 default fri_heather = 3.3
 if fri_heather > 7.5:
-    $ rel_heather = 0
+    default rel_heather = 0
 
 default fri_gwen = 4.2
 if fri_gwen > 7.5:
-    $ rel_gwen = 0
+    default rel_gwen = 0
 
 default fri_owen = 4.5
 if fri_owen > 7.5:
-    $ rel_owen = 0
+    default rel_owen = 0
 
+
+#Checking who is still left in the game
+default game_ez = True
+default game_noah = True
+default game_just = True
+default game_katie = True
+default game_tyler = True
+default game_cody = True
+default game_beth = True
+default game_sadie = True
+default game_court = True
+default game_harold = True
+default game_eva = True
+default game_trent = True
+default game_bridge = True
+default game_linds = True
+default game_dj = True
+default game_izzy = True
+default game_geoff = True
+default game_lesh = True
+default game_duncan = True
+default game_heather = True
+default game_gwen = True
+default game_owen = True
 
 
 
@@ -148,6 +172,8 @@ if fri_owen > 7.5:
 label start:
 
     stop music fadeout 1.0
+
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -807,7 +833,7 @@ label start:
             "I don't think about them.":
                 jump choice2_Nope
 
-            "Well..."
+            us "Well..."
 
 
         label choice2_Lots:
@@ -851,27 +877,31 @@ label start:
 
                 "You will play without sabotaging or manipulating. in the competition.":
                     jump choice2_1_none
+                
+                us "Hmm..."
 
 
+            label choice2_1_both:
+                us "It's a deal! The audience should have a show they won't forget!"
+                "Chris chuckles."
+                chris "That's what I hoped for."
+                chris "I knew it was a good idea getting you on the show!"
+                us "Technically, my manag-"
+                chris "The deets aren't important! Let's check out your van."
 
-                    label choice2_1_both:
-                    us "It's a deal! The audience should have a show they won't forget!"
-                    "Chris chuckles."
-                    chris "That's what I hoped for."
-                    chris "I knew it was a good idea getting you on the show!"
-                    us "Technically my man-"
-                    chris "The deets aren't important! Let's check out your ven."
-
-
-                    label choice2_1_maybe:
-                    "smth"
+                jump choice2_done
 
 
-                    label choice2_1_none:
+            label choice2_1_maybe:
+                us "Maybe"
 
+                jump choice2_done
 
+            label choice2_1_none:
+                us "No, thank you."
+                
+                jump choice2_done
 
-            jump choice2_done
 
 
         label choice2_Little:

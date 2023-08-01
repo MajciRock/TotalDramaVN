@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 810: choice menuitem expects a non-empty block.
-    "I care a lot about the ratings.":
-                                      ^
+File "game/script.rpy", line 884: expected menuitem
+    label choice2_1_both:
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Jul 31 19:14:36 2023
+Tue Aug  1 19:10:57 2023
